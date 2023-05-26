@@ -1,6 +1,6 @@
 import React from 'react';
 import { useDrag } from 'react-dnd';
-import { ItemTypes } from './ItemTypes';
+import { ItemTypes } from './constants/ItemTypes';
 
 const AccessoriesGrid = () => {
   // Define draggable accessories

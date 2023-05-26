@@ -1,6 +1,6 @@
 import React from 'react';
 import { useDrop } from 'react-dnd';
-import { ItemTypes } from './ItemTypes';
+import { ItemTypes } from './constants/ItemTypes';
 
 const ClownContainer = () => {
   // Define the drop target behavior
