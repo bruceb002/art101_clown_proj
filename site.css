@@ -10,6 +10,7 @@ body {
     height: 110px;
     border: inset 20px #e80808;
     cursor: grab;
+    margin: 10px;
   }
   
   h1 {
@@ -60,7 +61,7 @@ body {
     height: 100%;
     cursor: grab;
     border: inset 8px #e50000;
-    margin-top: 20px;
+    margin-top: 15px;
   }
   
   
@@ -71,7 +72,7 @@ body {
   #clownZone {
     border: inset 8px #c90000;
     margin-right: 490px;
-    margin-top:20px;
+    margin-top: 15px;
     background-image: url(https://raw.githubusercontent.com/bruceb002/art101_clown_proj/main/img/placeholder_img.jpeg);
   }
   
