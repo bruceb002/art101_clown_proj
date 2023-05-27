@@ -4,7 +4,8 @@
     "description": "Drag and Drop accessories onto the clown! Design the clown based on your preferences!",
     "scripts": {
         "start": "webpack-dev-server --mode development --open",
-        "build": "webpack --mode production"
+        "build": "webpack --mode production",
+        "babel": "babel src -d dist "
     },
     "dependencies": {
         "core-js": "^3.30.2",
@@ -14,7 +15,9 @@
         "react-dom": "^18.2.0"
     },
     "devDependencies": {
+        "@babel/cli": "^7.21.5",
         "@babel/core": "^7.22.1",
+        "@babel/preset-env": "^7.22.2",
         "@babel/preset-react": "^7.22.0",
         "babel-loader": "^9.1.2",
         "webpack": "^5.84.1",
