@@ -1,5 +1,5 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
+import { createRoot } from 'react-dom/client';
 import AccessoriesGrid from './AccessoriesGrid';
 import ClownContainer from './ClownContainer';
 
@@ -7,7 +7,7 @@ const App = () => {
   return (
     <main>
       <header>
-        <div class="cushion">
+        <div className="cushion">
           <h4>WELCOME TO THE CLOWN ZONE</h4>
         </div>
       </header>
@@ -24,4 +24,9 @@ const App = () => {
   );
 };
 
-ReactDOM.render(App, document.querySelector('#dress_up_page'));
+
+
+const domNode = document.getElementById('dress_up_page');
+const root = createRoot(domNode);
+
+root.render(<App />);
