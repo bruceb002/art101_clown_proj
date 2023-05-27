@@ -1,10 +1,9 @@
 import React from 'react';
 //import { useDrop } from 'react-dnd';
 //import { ItemTypes } from './constants/ItemTypes';
-
-const ClownContainer = () => {
+export default function ClownContainer() {
   // Define the drop target behavior
-
+  
   return (
     <div id="clownZone">
       <div className="cushion">
@@ -12,6 +11,4 @@ const ClownContainer = () => {
       </div>
     </div>
   );
-};
-
-export default ClownContainer;
+}

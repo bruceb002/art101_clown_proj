@@ -2,9 +2,7 @@ import React from 'react';
 //import { useDrag } from 'react-dnd';
 //import { ItemTypes } from './constants/ItemTypes';
 
-const AccessoriesGrid = () => {
-  // Define draggable accessories
-
+export default function AccessoriesGrid() {
   return (
     <nav>
       <div className="cushion1">
@@ -14,6 +12,4 @@ const AccessoriesGrid = () => {
       </div>
     </nav>
   );
-};
-
-export default AccessoriesGrid;
+}
