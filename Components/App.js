@@ -6,7 +6,7 @@ const App = () => {
   return (
     <main>
       <header>
-        <div className="cushion">
+        <div class="cushion">
           <h4>WELCOME TO THE CLOWN ZONE</h4>
         </div>
       </header>
