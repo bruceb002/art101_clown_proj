@@ -1,9 +1,8 @@
 
 function toggle_sites() {
     var title = document.getElementById("title_page");
-    var dress_up = document.getElementById("dress_up_page");
     title.style.display = "none";
-    dress_up.style.display = "block";
+    $('#dress_up_page').toggleClass('hide show');
     
     /* Should we add music? */
 }
