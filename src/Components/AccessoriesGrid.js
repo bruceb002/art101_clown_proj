@@ -2,7 +2,7 @@ import React from 'react';
 import { useDrag } from 'react-dnd';
 import { ItemTypes } from './constants/ItemTypes';
 
-const AccessoriesGrid = () => {
+function AccessoriesGrid() {
   // Define draggable accessories
 
   return (

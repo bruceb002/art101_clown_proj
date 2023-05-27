@@ -2,7 +2,7 @@ import React from 'react';
 import { useDrop } from 'react-dnd';
 import { ItemTypes } from './constants/ItemTypes.js';
 
-const ClownContainer = () => {
+function ClownContainer() {
   // Define the drop target behavior
 
   return (

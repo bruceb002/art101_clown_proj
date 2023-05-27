@@ -2,7 +2,7 @@ import React from 'react';
 import AccessoriesGrid from './AccessoriesGrid';
 import ClownContainer from './ClownContainer';
 
-const App = () => {
+function App() {
   return (
     <main>
       <header>
