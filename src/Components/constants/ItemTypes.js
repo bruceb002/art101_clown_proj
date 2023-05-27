@@ -1,12 +1,5 @@
-"use strict";
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports.ItemTypes = void 0;
-var ItemTypes = {
+export const ItemTypes = {
   HAIR_RED: 'hair_red',
   HAIR_ORANGE: 'hair_orange',
-  HAIR_YELLOW: 'hair_yellow'
-};
-exports.ItemTypes = ItemTypes;
+  HAIR_YELLOW: 'hair_yellow',
+  };
