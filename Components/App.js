@@ -5,6 +5,8 @@ import ClownContainer from './ClownContainer';
 
 const App = () => {
   return (
+    <h4>Hello world!</h4>
+    /*
     <main>
       <header>
         <div className="cushion">
@@ -21,6 +23,7 @@ const App = () => {
         <AccessoriesGrid />
       </div>
     </main>
+    */
   );
 };
 
