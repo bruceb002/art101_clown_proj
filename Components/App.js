@@ -1,4 +1,5 @@
 import React from 'react';
+import ReactDOM from 'react-dom';
 import AccessoriesGrid from './AccessoriesGrid';
 import ClownContainer from './ClownContainer';
 
@@ -23,4 +24,4 @@ const App = () => {
   );
 };
 
-export default App;
+ReactDOM.render(App, document.querySelector('#dress_up_page'));
