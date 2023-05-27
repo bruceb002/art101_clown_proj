@@ -1,4 +1,4 @@
-import React from '../typescript/react';
+import React from 'react';
 import AccessoriesGrid from './AccessoriesGrid.js';
 import ClownContainer from './ClownContainer.js';
 

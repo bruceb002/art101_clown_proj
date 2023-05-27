@@ -1,5 +1,5 @@
-import React from '../typescript/react';
-import { useDrag } from '../react-dnd';
+import React from 'react';
+import { useDrag } from 'react-dnd';
 import { ItemTypes } from './constants/ItemTypes.js';
 
 const AccessoriesGrid = () => {
