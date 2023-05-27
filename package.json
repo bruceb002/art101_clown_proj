@@ -3,22 +3,22 @@
     "version": "1.0.0",
     "description": "Drag and Drop accessories onto the clown! Design the clown based on your preferences!",
     "scripts": {
-      "start": "webpack-dev-server --mode development --open",
-      "build": "webpack --mode production"
+        "start": "webpack-dev-server --mode development --open",
+        "build": "webpack --mode production"
     },
     "dependencies": {
-      "react": "^18.2.0",
-      "react-dom": "^18.2.0",
-      "react-dnd": "^16.0.1",
-      "react-dnd-html5-backend": "^16.0.1"
+        "core-js": "^3.30.2",
+        "react": "^18.2.0",
+        "react-dnd": "^16.0.1",
+        "react-dnd-html5-backend": "^16.0.1",
+        "react-dom": "^18.2.0"
     },
     "devDependencies": {
-      "webpack": "^5.84.1",
-      "webpack-cli": "^5.1.1",
-      "webpack-dev-server": "^4.15.0",
-      "babel-loader": "^9.1.2",
-      "babel-preset-react": "^6.24.1"
+        "@babel/core": "^7.22.1",
+        "@babel/preset-react": "^7.22.0",
+        "babel-loader": "^9.1.2",
+        "webpack": "^5.84.1",
+        "webpack-cli": "^5.1.1",
+        "webpack-dev-server": "^4.15.0"
     }
-   }
-   
-   
+}

@@ -10,7 +10,7 @@ const App = () => {
           <h4>WELCOME TO THE CLOWN ZONE</h4>
         </div>
       </header>
-      <div style="background-color: #ff0000;"></div>
+      
       <div id="wrapper">
         <ClownContainer />
       </div>
