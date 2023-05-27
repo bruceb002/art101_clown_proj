@@ -3,8 +3,10 @@
   "version": "1.0.0",
   "description": "Drag and Drop accessories onto the clown! Design the clown based on your preferences!",
   "scripts": {
-    "start": "webpack-dev-server --mode development --open",
-    "build": "webpack --mode production"
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
   },
   "dependencies": {
     "babel-standalone": "^6.26.0",
@@ -20,6 +22,7 @@
     "@babel/preset-env": "^7.22.2",
     "@babel/preset-react": "^7.22.0",
     "babel-loader": "^9.1.2",
+    "react-scripts": "^5.0.1",
     "webpack": "^5.84.1",
     "webpack-cli": "^5.1.1",
     "webpack-dev-server": "^4.15.0"
