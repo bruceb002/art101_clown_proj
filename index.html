@@ -12,44 +12,16 @@
 
 	    <!-- Link to javascript file - DEFER waits until all elements are rendered -->
 	    <script type="text/javascript" src="./site.js" DEFER></script>
-		<script type="text/javascript" src="./index.js" DEFER></script>
-        <script type="text/javascript" src="./Components/App.js" DEFER></script>
-        <script type="text/javascript" src="./Components/ClownContainer.js" DEFER></script>
-        <script type="text/javascript" src="./Components/AccessoriesGrid.js" DEFER></script>
-
+		<script type="module" src="./index.js"></script>
 	</head>
-	
-	<body>		
 
-		<header>
-			<div class="cushion">
-				<h4>WELCOME TO THE CLOWN ZONE</h4>
-			</div>
-		</header>
-		
-		<div id="wrapper">
-		
+	<body>
+		<div id="title_page">
 			<main>
-				<div id="clownZone">
-					<div class="cushion">
-						<img class="doll-base" src="./assets/doll-base.png">
-						
-					</div>
-				</div>
+				<button type="button" id="start">Start!</button>
 			</main>
-			
-			<div id="accessories">
-                <p>Just Placeholding With Some Images</p>
-				<div class="cushion1">
-					<img class="clown-hair" src="./assets/head/hair_red.png">
-                    <img class="clown-hair" src="./assets/head/hair_orange.png">
-                    <img class="clown-hair" src="./assets/head/hair_yellow.png">
-					
-				</div>
-			</nav>
-		
 		</div>
 
-	
+		<div id="dress_up_page"></div>
 	</body>
 </html>

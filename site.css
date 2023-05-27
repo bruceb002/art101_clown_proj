@@ -1,6 +1,38 @@
+/* CSS For Title Page */
+#title_page {
+  background-image: url("./img/placeholder_clown_bg.jpeg");
+  background-size: cover;
+  position: absolute;
+  background-repeat: no-repeat;
+  height: 100%;
+  width: 100%;
+}
+
+#title_page main {
+  height: inherit;
+  width: inherit;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+button {
+  background-color: #c90000;
+  border-radius: 50%;
+  aspect-ratio: 1/1;
+  height: 55%;
+  
+}
+
+/* CSS For Dress Up Page */
+#dress_up_page {
+  display: none;
+}
+
 body {
-    margin:0;
-    padding:0;
+    margin: 0;
+    padding: 0;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     line-height: 1.5em;
   }
@@ -21,6 +53,7 @@ body {
     word-spacing: 5px;
     text-decoration: underline;
   }
+  
   h2 {
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   
@@ -41,13 +74,15 @@ body {
     font-size: 55px;
     color: rgb(202, 4, 4);
   }
-  main {
+
+ #wrapper {
     padding-right: 25px;
     padding-left: 25px;
     padding-bottom: 50px;
     float: left;
     width: 100%;
     cursor: grab;
+    overflow: hidden;
   }
   
   #accessories {
@@ -63,11 +98,6 @@ body {
     border: inset 8px #e50000;
     margin-top: 15px;
   }
-  
-  
-  #wrapper {
-    overflow: hidden;
-  }
         
   #clownZone {
     border: inset 8px #c90000;
@@ -75,7 +105,6 @@ body {
     margin-top: 15px;
     background-image: url(https://raw.githubusercontent.com/bruceb002/art101_clown_proj/main/img/placeholder_img.jpeg);
   }
-  
   
   .cushion {
     margin: 15px; /* Padding for content */
@@ -112,13 +141,12 @@ body {
     cursor: crosshair;
   }
   
-
   .bg-photo {
-  
     max-width: 1056px;
     max-height: 845px;
     border: inset 4px #4f1b51;
   }
+
   .doll-base {
     position:relative;
     left: 32%;
@@ -126,6 +154,7 @@ body {
     max-height: 635px;
     padding-top: 115px;
   }
+
   .clown-hair {
     max-width: 150px;
     max-height: 120px;

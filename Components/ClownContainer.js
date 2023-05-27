@@ -1,13 +1,15 @@
 import React from 'react';
 import { useDrop } from 'react-dnd';
-import { ItemTypes } from './constants/ItemTypes';
+import { ItemTypes } from './constants/ItemTypes.js';
 
 const ClownContainer = () => {
   // Define the drop target behavior
 
   return (
-    <div>
-      {/* Render the container for the clown */}
+    <div id="clownZone">
+      <div className="cushion">
+        <img className="doll-base" src="../assets/doll-base.png" alt="Doll Base" />	
+      </div>
     </div>
   );
 };
