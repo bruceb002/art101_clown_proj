@@ -2,8 +2,6 @@
 function toggle_sites() {
     var title = document.getElementById("title_page");
     title.style.display = "none";
-    $('#dress_up_page').toggleClass('hide show');
-    
     /* Should we add music? */
 }
 

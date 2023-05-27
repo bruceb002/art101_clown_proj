@@ -6,6 +6,7 @@
   background-repeat: no-repeat;
   height: 100%;
   width: 100%;
+  display: none;
 }
 
 #title_page main {
@@ -25,11 +26,7 @@ button {
 }
 
 /* CSS For Dress Up Page */
-#dress_up_page, .hide {
-  display: none;
-}
-
-.show {
+#dress_up_page {
   display: block;
 }
 
