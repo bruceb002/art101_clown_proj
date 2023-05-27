@@ -2,8 +2,11 @@
 function toggle_sites() {
     var title = document.getElementById("title_page");
     var dress_up = document.getElementById("dress_up_page");
-    title.style.display = "none";
-    dress_up.style.display = "block";
+    var show = title.style.display;
+    var hide = dress_up.style.display;
+    title.style.display = hide;
+    dress_up.style.display = show;
+    
     /* Should we add music? */
 }
 

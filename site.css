@@ -22,7 +22,6 @@ button {
   border-radius: 50%;
   aspect-ratio: 1/1;
   height: 55%;
-  
 }
 
 /* CSS For Dress Up Page */
@@ -103,7 +102,10 @@ body {
     border: inset 8px #c90000;
     margin-right: 490px;
     margin-top: 15px;
-    background-image: url(https://raw.githubusercontent.com/bruceb002/art101_clown_proj/main/img/placeholder_img.jpeg);
+    background-image: url("./img/placeholder_img.jpeg");
+    background-repeat: no-repeat;
+    position: absolute;
+    background-size: cover;
   }
   
   .cushion {
@@ -148,7 +150,7 @@ body {
   }
 
   .doll-base {
-    position:relative;
+    position: relative;
     left: 32%;
     max-width: 425px;
     max-height: 635px;
@@ -160,3 +162,4 @@ body {
     max-height: 120px;
     padding: 15px;
   }
+  
