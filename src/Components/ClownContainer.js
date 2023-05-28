@@ -8,7 +8,7 @@ function ClownContainer() {
   return (
     <div id="clownZone">
       <div className="cushion">
-        <img className="doll-base" src="../assets/doll-base.png" alt="Doll Base" />	
+        <img className="doll-base" src="./assets/doll-base.png" alt="Doll Base" />	
       </div>
     </div>
   );
