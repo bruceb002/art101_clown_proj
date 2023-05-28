@@ -1,0 +1,161 @@
+/* CSS For Title Page */
+#title_page {
+    background-image: url("./img/placeholder_img.jpeg");
+    background-size: cover;
+    position: absolute;
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 100%;
+  }
+  
+  #title_page main {
+    height: inherit;
+    width: inherit;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+  }
+  
+  button {
+    background-color: #c90000;
+    border-radius: 50%;
+    aspect-ratio: 1/1;
+    height: 55%;
+  }
+  
+  /* CSS For Dress Up Page */
+  body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+      line-height: 1.5em;
+    }
+    
+    header {
+      background: #ffffff;
+      height: 110px;
+      border: inset 20px #e80808;
+      cursor: grab;
+      margin: 10px;
+    }
+    
+    h1 {
+      font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+      margin-top: 0;
+      padding-top: 35px;
+      text-align: center;
+      word-spacing: 5px;
+      text-decoration: underline;
+    }
+    
+    h2 {
+      font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    
+    
+    }
+    
+    h3 {
+      font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    
+    }
+    
+    h4 {
+      font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+      margin-top: 0;
+      padding-top: 45px;
+      text-align: center;
+      word-spacing: 5px;
+      font-size: 55px;
+      color: rgb(202, 4, 4);
+    }
+  
+   #wrapper {
+      padding-right: 25px;
+      padding-left: 25px;
+      padding-bottom: 50px;
+      float: left;
+      width: 100%;
+      cursor: grab;
+      overflow: hidden;
+    }
+    
+    #accessories {
+      padding-top: 30px;
+      padding-bottom: 460px;
+      margin-bottom: 0px;
+      float: left;
+      width: 415px;
+      margin-left: -492px;
+      background: #ffffff;
+      height: 100%;
+      cursor: grab;
+      border: inset 8px #e50000;
+      margin-top: 15px;
+    }
+          
+    #clownZone {
+      border: inset 8px #c90000;
+      margin-right: 490px;
+      margin-top: 15px;
+      background-image: url("./img/placeholder_img.jpeg");
+      background-repeat: no-repeat;
+      position: absolute;
+      background-size: cover;
+    }
+    
+    .cushion {
+      margin: 15px; /* Padding for content */
+      margin-top: 0;
+    }
+  
+    .cushion1 {
+      margin: 15px; /* Padding for content */
+      column-count: 2;
+      column-fill: balance;
+      column-width: 120px;
+      column-gap: 15px;
+      position: relative;
+    }
+    
+    p {
+      color: #555;
+      text-align: center;
+    
+    }
+    
+    nav ul {
+      list-style-type: none;
+      margin: 0;
+      padding-left: 20px;
+      padding-bottom: 5px;
+      cursor: crosshair;
+    }
+    
+    nav ul a {
+      font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+      font-size: 25px;
+      color: rgb(88, 0, 57);
+      cursor: crosshair;
+    }
+    
+    .bg-photo {
+      max-width: 1056px;
+      max-height: 845px;
+      border: inset 4px #4f1b51;
+    }
+  
+    .doll-base {
+      position: relative;
+      left: 32%;
+      max-width: 425px;
+      max-height: 635px;
+      padding-top: 115px;
+    }
+  
+    .clown-hair {
+      max-width: 150px;
+      max-height: 120px;
+      padding: 15px;
+    }
+    
