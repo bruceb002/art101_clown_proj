@@ -48,10 +48,12 @@ function drop(event) {
 }
 
 function main() {
+    //go from title to dress up screen
     $("#dress_up_page").css("display", "none");
     var button = document.getElementById("start");
     button.addEventListener("click", toggle_sites);
 
+    //handle drag and drop
     const accessories = document.querySelectorAll('.cushion1');
     const clownContainer = document.getElementById('doll-container');
     console.log("This is clownContainer: ", clownContainer);
