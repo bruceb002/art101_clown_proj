@@ -105,6 +105,12 @@ html {
       position: relative;
       background-size: cover;
     }
+
+    .clown-container {
+      position: relative;
+      z-index: 0;
+      cursor: grab;
+    }
     
     .cushion {
       margin-left: 10px;
@@ -142,7 +148,7 @@ html {
 
     nav img {
       position: relative;
-      z-index: 1;
+      z-index: 10;
       cursor: grab;
     }
     
@@ -153,11 +159,8 @@ html {
     }
   
     .doll-base {
-      position: relative;
-      z-index: 0;
       display: block;
       margin: auto;
-      cursor: grab;
       max-width: 400px;
       max-height: 530px;
       padding-top: 20px;
