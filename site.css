@@ -141,6 +141,8 @@ html {
     }
 
     nav img {
+      position: relative;
+      z-index: 1;
       cursor: grab;
     }
     
@@ -151,6 +153,8 @@ html {
     }
   
     .doll-base {
+      position: relative;
+      z-index: 0;
       display: block;
       margin: auto;
       cursor: grab;
