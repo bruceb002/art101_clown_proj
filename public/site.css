@@ -80,7 +80,6 @@ html {
       padding-bottom: 50px;
       float: left;
       width: 100%;
-      cursor: grab;
       overflow: hidden;
     }
     
@@ -92,7 +91,6 @@ html {
       max-height: 100%;
       margin-left: -495px;
       background: #fff5ec;
-      cursor: grab;
       border: inset 8px #e50000;
       margin-top: 15px;
     }
@@ -112,6 +110,7 @@ html {
       margin-left: 10px;
       margin-right: 10px;
       padding-bottom: 20px;
+      cursor: grab;
     }
   
     .cushion1 {
@@ -151,6 +150,7 @@ html {
     .doll-base {
       display: block;
       margin: auto;
+      cursor: grab;
       max-width: 400px;
       max-height: 530px;
       padding-top: 20px;
