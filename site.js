@@ -53,7 +53,7 @@ function main() {
     button.addEventListener("click", toggle_sites);
 
     const accessories = document.querySelectorAll('.cushion1');
-    const clownContainer = document.getElementById('doll-base');
+    const clownContainer = document.getElementById('doll-container');
 
     accessories.forEach(accessory => {
       accessory.addEventListener('dragstart', dragStart);
