@@ -54,6 +54,7 @@ function main() {
 
     const accessories = document.querySelectorAll('.cushion1');
     const clownContainer = document.getElementById('doll-container');
+    console.log("This is clownContainer: ", clownContainer);
 
     accessories.forEach(accessory => {
       accessory.addEventListener('dragstart', dragStart);
