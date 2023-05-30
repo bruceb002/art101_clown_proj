@@ -8,9 +8,22 @@ function toggle_sites() {
     /* Should we add music? */
 }
 
+function allowDrop(ev) {
+    ev.preventDefault();
+  }
+  
+  function drag(ev) {
+    ev.dataTransfer.setData("text", ev.target.id);
+  }
+  
+  function drop(ev) {
+    ev.preventDefault();
+    var data = ev.dataTransfer.getData("text");
+    ev.target.appendChild(document.getElementById(data));
+  }
+
 function main() {
     $("#dress_up_page").css("display", "none");
-
     var button = document.getElementById("start");
     button.addEventListener("click", toggle_sites);
 }
