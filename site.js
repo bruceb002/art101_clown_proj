@@ -55,8 +55,8 @@ function main() {
 
     //handle drag and drop
     var accessories = document.querySelectorAll('.cushion1');
-    var clownContainer = $("#clownZone");
-    console.log("This is clownContainer: ", clownContainer);
+    var clownContainer = document.getElementById("doll-container");
+    console.log("This is clownContainer: ", document.getElementById("doll-container"));
 
     accessories.forEach(accessory => {
       accessory.addEventListener('dragstart', dragStart);
