@@ -54,8 +54,8 @@ function main() {
     button.addEventListener("click", toggle_sites);
 
     //handle drag and drop
-    const accessories = document.querySelectorAll('.cushion1');
-    const clownContainer = document.getElementById('doll-container');
+    var accessories = document.querySelectorAll('.cushion1');
+    var clownContainer = document.getElementById('doll-container');
     console.log("This is clownContainer: ", clownContainer);
 
     accessories.forEach(accessory => {
