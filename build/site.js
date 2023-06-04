@@ -11,8 +11,7 @@ function toggle_sites() {
 function main() {
     //go from title to dress up screen
     $("#dress_up_page").css("display", "none");
-    var button = document.getElementById("start");
-    button.addEventListener("click", toggle_sites);
+    $("#start").click(toggle_sites);
 
     //handle drag and drop
     $("#accessory").draggable();
