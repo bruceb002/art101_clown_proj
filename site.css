@@ -94,20 +94,22 @@ h3 {
   border: inset 8px #e50000;
 }
 
-#accessory_types {
+#hair-accessories, #eye-accessories {
   display: grid;
   grid-template-columns: auto auto;
   width: 100%;
   margin: auto;
 }
 
-#hair-accessories .hair {
+#hair-accessories .hair, #eye-accessories .eye {
   max-width: 120px;
   max-height: 96px;
   padding-left: 30px;
   padding-right: 30px;
   margin-bottom: 15px;
 }
+
+#eye-accessories
 
 nav img {
   position: relative;
