@@ -76,7 +76,7 @@ h3 {
 
 #wrapper {
   display: grid;
-  grid-template-columns: 60% 38%;
+  grid-template-columns: 60% 35%;
   margin: auto;
   padding-right: 25px;
   padding-left: 25px;
@@ -86,6 +86,7 @@ h3 {
 
 #accessories {
   height: 100%;
+  margin-left: 80px;
   margin: auto;
   padding-bottom: 15px;
   background: #fff5ec;
