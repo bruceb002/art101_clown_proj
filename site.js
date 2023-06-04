@@ -14,8 +14,10 @@ function main() {
     $("#start").click(toggle_sites);
 
     //handle drag and drop
+    console.log($(".accessory"));
     $(".accessory").draggable();
-    $("#doll-container").droppable({
+    console.log($("#clownZone"));
+    $("#clownZone").droppable({
         drop: function() {
             alert("This basic function works!");
         }
