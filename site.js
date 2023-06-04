@@ -17,7 +17,7 @@ function main() {
     $(".accessory").draggable();
     $("#doll-container").droppable({
         accept: ".accessory",
-        drop: (_, ui) => {
+        drop: function(_, ui) {
             //get id (including the hashtag) of accessory
             var dragged_item_id = "#" + ui.draggable.attr("id");
             console.log(dragged_item_id);
