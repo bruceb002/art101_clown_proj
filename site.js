@@ -11,15 +11,8 @@ function toggle_sites() {
 function main() {
     //go from title to dress up screen
     $("#dress_up_page").css("display", "none");
+    console.log($("#dress_up_page"));
     $("#start").click(toggle_sites);
-
-    //handle drag and drop
-    $("#red_hair").draggable();
-    $("#clownZone").droppable({
-        drop: function() {
-            alert("This basic function works!");
-        }
-    });
 }
 
 main();
