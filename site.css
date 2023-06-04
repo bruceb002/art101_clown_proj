@@ -3,6 +3,11 @@ html {
   background-color: #ffffff;
 }
 
+body {
+  margin: auto;
+  padding: auto;
+}
+
 /* CSS For Title Page */
 #title_page {
   background-image: url("./img/tmp_clown_bg.jpeg");
@@ -30,26 +35,23 @@ button {
 }
 
 /* CSS For Dress Up Page */
-body {
-  margin: auto;
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+#dress_up_page {
+  padding: 15px;
 }
 
 #header {
   background: #f9ffc7;
-  height: 110px;
-  border: inset 20px #e80808;
-  margin: 10px;
+  border: inset 20px #ff4646;
+  padding: 15px;
+  display: flex;
+  justify-content: center;
 }
 
 h1 {
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-  padding-top: 45px;
-  margin-top: 0px;
-  text-align: center;
   word-spacing: 5px;
   font-size: 55px;
-  color: rgb(202, 4, 4);
+  color: rgb(255 0 0);
 }
 
 h2 {
@@ -64,7 +66,6 @@ h3 {
 #wrapper {
   padding-right: 25px;
   padding-left: 25px;
-  padding-bottom: 50px;
   width: 100%;
 }
 
@@ -115,7 +116,7 @@ nav img {
   max-height: 530px;
 }
 
-#accessory {
+.accessory {
   max-width: 120px;
   max-height: 96px;
   padding-left: 30px;
