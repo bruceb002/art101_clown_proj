@@ -98,6 +98,19 @@ h3 {
   grid-template-columns: auto auto;
   margin: auto;
 }
+
+.accessory {
+  max-width: 120px;
+  max-height: 96px;
+  padding-left: 30px;
+  padding-right: 30px;
+  margin-bottom: 15px;
+}
+
+nav img {
+  position: relative;
+  cursor: grab;
+}
       
 #clownZone {
   position: relative;
@@ -113,21 +126,8 @@ h3 {
   cursor: grab;
 }
 
-nav img {
-  position: relative;
-  cursor: grab;
-}
-
 #doll-base {
   display: block;
   margin: auto;
   max-width: 42%;
-}
-
-.accessory {
-  max-width: 120px;
-  max-height: 96px;
-  padding-left: 30px;
-  padding-right: 30px;
-  margin-bottom: 15px;
 }
