@@ -14,9 +14,7 @@ function main() {
     $("#start").click(toggle_sites);
 
     //handle drag and drop
-    console.log($(".accessory"));
-    $(".accessory").draggable();
-    console.log($("#clownZone"));
+    $("#red_hair").draggable();
     $("#clownZone").droppable({
         drop: function() {
             alert("This basic function works!");
