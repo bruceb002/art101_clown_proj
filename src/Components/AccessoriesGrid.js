@@ -3,9 +3,9 @@ import { useDrag } from 'react-dnd';
 
 function AccessoriesGrid() {
   var hairAccessories = [
-    { id: 'hair_red', src: './assets/head/hair_red.png', alt: 'Red Hair', className: 'accessory' },
-    { id: 'hair_orange', src: './assets/head/hair_orange.png', alt: 'Orange Hair', className: 'accessory' },
-    { id: 'hair_yellow', src: './assets/head/hair_yellow.png', alt: 'Yellow Hair', className: 'accessory' },
+    { id: 'hair_red', src: './assets/head/hair_red.png', alt: 'Red Hair', className: 'hair' },
+    { id: 'hair_orange', src: './assets/head/hair_orange.png', alt: 'Orange Hair', className: 'hair' },
+    { id: 'hair_yellow', src: './assets/head/hair_yellow.png', alt: 'Yellow Hair', className: 'hair' },
   ];
 
   /*

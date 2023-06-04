@@ -1,39 +1,54 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { useDrop } from 'react-dnd';
 
 function ClownContainer() {
-  const [accessories, setAccessories] = React.useState([]);
+  const [droppedAccessories, setDroppedAccessories] = useState([]);
 
-  const moveAccessory = (id, x, y) => {
-    setAccessories((prevAccessories) =>
-      prevAccessories.map((accessory) =>
-        accessory.id === id ? { ...accessory, x, y } : accessory
-      )
+  const [{ isOver }, drop] = useDrop(() => ({
+    accept: 'accessory',
+    drop: (item) => {
+      moveAccessory(item);
+      setDroppedAccessories((prevAccessories) => [...prevAccessories, item]);
+    },
+    collect: monitor => ({
+      isOver: monitor.isOver(),
+    }),
+  }));
+
+  const moveAccessory = (item) => {
+    const { className, id } = item;
+    const existingAccessoryIndex = droppedAccessories.findIndex(
+      (accessory) => accessory.className === className
     );
+  
+    if (existingAccessoryIndex !== -1) {
+      setDroppedAccessories((prevAccessories) =>
+        prevAccessories.map((accessory, index) =>
+          index === existingAccessoryIndex ? item : accessory
+        )
+      );
+    } else {
+      setDroppedAccessories((prevAccessories) => [...prevAccessories, item]);
+    }
   };
 
   const renderAccessories = () => {
-    return accessories.map((accessory) => (
+    return droppedAccessories.map((accessory) => (
       <img
         key={accessory.id}
-        className="accessory-dropped"
+        id={accessory.id}
         src={`./assets/head/${accessory.id}.png`}
-        alt={accessory.id}
-        style={{ left: accessory.x, top: accessory.y }}
+        alt={accessory.alt}
+        className="hair"
+        style={{
+          position: 'relative',
+          bottom: '560px',
+          maxWidth: '120px',
+          maxHeight: '96px',
+        }}
       />
     ));
-  };
-
-  const [, drop] = useDrop(() => ({
-    accept: 'accessory',
-    drop: (item, monitor) => {
-      const offset = monitor.getClientOffset();
-      const containerRect = document.getElementById('doll-container').getBoundingClientRect();
-      const x = offset.x - containerRect.left - item.width / 2;
-      const y = offset.y - containerRect.top - item.height / 2;
-      moveAccessory(item.id, x, y);
-    },
-  }));
+  }
 
   return (
     <div id="doll-container" ref={drop}>
