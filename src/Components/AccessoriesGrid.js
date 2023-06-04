@@ -3,9 +3,9 @@ import { useDrag } from 'react-dnd';
 
 function AccessoriesGrid() {
   var hairAccessories = [
-    { id: 'red_hair', src: './assets/head/hair_red.png', alt: 'Red Hair', className: 'accessory' },
-    { id: 'orange_hair', src: './assets/head/hair_orange.png', alt: 'Orange Hair', className: 'accessory' },
-    { id: 'yellow_hair', src: './assets/head/hair_yellow.png', alt: 'Yellow Hair', className: 'accessory' },
+    { id: 'hair_red', src: './assets/head/hair_red.png', alt: 'Red Hair', className: 'accessory' },
+    { id: 'hair_orange', src: './assets/head/hair_orange.png', alt: 'Orange Hair', className: 'accessory' },
+    { id: 'hair_yellow', src: './assets/head/hair_yellow.png', alt: 'Yellow Hair', className: 'accessory' },
   ];
 
   /*
@@ -51,12 +51,12 @@ function Accessory({ id, src, alt, className }) {
 
   return (
     <img
-      className={`accessory ${className}`}
+      className={`${className}`}
       id={id}
       src={src}
       alt={alt}
       ref={drag}
-      style={{ opacity: isDragging ? 0.5 : 1 }}
+      style={{ background: isDragging ? 'transparent' : '' }}
     />
   );
 }
