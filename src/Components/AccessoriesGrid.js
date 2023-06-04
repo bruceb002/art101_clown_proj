@@ -2,7 +2,7 @@ import React from 'react';
 import { useDrag } from 'react-dnd';
 
 function AccessoriesGrid() {
-  const hairAccessories = [
+  var hairAccessories = [
     { id: 'red_hair', src: './assets/head/hair_red.png', alt: 'Red Hair', className: 'accessory' },
     { id: 'orange_hair', src: './assets/head/hair_orange.png', alt: 'Orange Hair', className: 'accessory' },
     { id: 'yellow_hair', src: './assets/head/hair_yellow.png', alt: 'Yellow Hair', className: 'accessory' },
@@ -33,7 +33,6 @@ function AccessoriesGrid() {
         ))}
       </div>
         */}
-      
     </nav>
   );
 }
