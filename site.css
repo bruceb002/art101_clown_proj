@@ -64,8 +64,6 @@ h3 {
 }
 
 #wrapper {
-  display: grid;
-  grid-template-columns: 70% 20%;
   margin: auto;
   padding-right: 25px;
   padding-left: 25px;
@@ -73,35 +71,33 @@ h3 {
 }
 
 #accessories {
+  float: right;
   padding-top: 10px;
   padding-bottom: 10px;
-  max-width: 415px;
-  max-height: 100%;
-  margin-top: 15px;
-  margin-left: -495px;
   background: #fff5ec;
   border: inset 8px #e50000;
+  max-width: 25%;
+  /*
   column-count: 2;
   column-fill: balance;
   column-width: 120px;
   column-gap: 15px;
-  position: relative;
+  */
 }
       
 #clownZone {
+  float: left;
   border: inset 8px #c90000;
-  margin-right: 490px;
+  max-width: 55%;
   margin-top: 15px;
   padding-top: 50px;
   padding-bottom: 50px;
   background-image: url("./img/placeholder_img.jpeg");
   background-position: center;
   background-repeat: no-repeat;
-  position: relative;
   background-size: cover;
   overflow: hidden;
   cursor: grab;
-  z-index: 0;
 }
 
 nav img {
