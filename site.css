@@ -2,7 +2,7 @@
 html {
   width: 100%;
   height: 100%;
-  background-color: #ffffff;
+  background-color: #ffeed6;
 }
 
 body {
@@ -89,13 +89,15 @@ h3 {
   height: 100%;
   margin: auto;
   padding-bottom: 15px;
-  background: #fff5ec;
+  background: transparent;
+  overflow-y: scroll;
   border: inset 8px #e50000;
 }
 
 #accessory_types {
   display: grid;
   grid-template-columns: auto auto;
+  width: 100%;
   margin: auto;
 }
 
