@@ -39,8 +39,8 @@ function AccessoriesGrid() {
 
 function Accessory({ id, src, alt, className }) {
   const [{ isDragging }, drag] = useDrag({
+    type: 'accessory', // Define the type here
     item: {
-      type: 'accessory',
       id,
       className,
     },
