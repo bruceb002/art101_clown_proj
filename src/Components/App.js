@@ -5,19 +5,19 @@ import ClownContainer from './ClownContainer';
 function App() {
   return (
     <main>
-      <header>
-        <div className="cushion">
-          <h4>WELCOME TO THE CLOWN ZONE</h4>
-        </div>
-      </header>
-        <div id="wrapper">
+      <div id="header">
+        <h1>WELCOME TO THE CLOWN ZONE</h1>
+      </div>
+      <div id="wrapper">
+        <div id="clownZone">
           <ClownContainer />
         </div>
 
         <div id="accessories">
-          <p>Just Placeholding With Some Images</p>
+          <h2>Accessories</h2>
           <AccessoriesGrid />
         </div>
+      </div>
     </main>
   );
 };
