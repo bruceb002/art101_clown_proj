@@ -71,20 +71,19 @@ h3 {
 }
 
 #accessories {
-  display: flex;
-  justify-content: center;
+  text-align: center;
   float: right;
   padding-top: 10px;
   padding-bottom: 10px;
   background: #fff5ec;
   border: inset 8px #e50000;
   max-width: 25%;
-  /*
-  column-count: 2;
-  column-fill: balance;
-  column-width: 120px;
-  column-gap: 15px;
-  */
+}
+
+#accessory_types {
+  display: grid;
+  grid-template-columns: auto auto;
+  margin: auto;
 }
       
 #clownZone {
