@@ -8,45 +8,6 @@ function toggle_sites() {
     /* Should we add music? */
 }
 
-let draggedAccessory = null;
-
-function dragStart(event) {
-  draggedAccessory = this;
-  this.classList.add('dragging');
-  event.dataTransfer.setData('text/plain', event.target.id);
-}
-
-function dragEnd() {
-  this.classList.remove('dragging');
-}
-
-function dragOver(event) {
-  event.preventDefault();
-}
-
-function dragEnter(event) {
-  event.preventDefault();
-  this.classList.add('hovered');
-}
-
-function dragLeave() {
-  this.classList.remove('hovered');
-}
-
-function drop(event) {
-  this.classList.remove('hovered');
-  const droppedAccessory = document.getElementById(event.dataTransfer.getData('text/plain'));
-  
-  if (this.contains(droppedAccessory)) {
-    // Accessory is being dropped back to its original position
-    this.appendChild(droppedAccessory);
-  } else {
-    // Accessory is being dropped onto the clown container
-    const clonedAccessory = droppedAccessory.cloneNode(true);
-    this.appendChild(clonedAccessory);
-  }
-}
-
 function main() {
     //go from title to dress up screen
     $("#dress_up_page").css("display", "none");
@@ -54,19 +15,9 @@ function main() {
     button.addEventListener("click", toggle_sites);
 
     //handle drag and drop
-    var accessories = document.querySelectorAll('.cushion1');
-    var clownContainer = document.getElementById('doll-container');
-    console.log("This is clownContainer: ", clownContainer);
+    $("#accessory").draggable();
+    $("#doll-container").droppable({accept: "#accessory"});
 
-    accessories.forEach(accessory => {
-      accessory.addEventListener('dragstart', dragStart);
-      accessory.addEventListener('dragend', dragEnd);
-    });
-
-    clownContainer.addEventListener('dragover', dragOver);
-    clownContainer.addEventListener('dragenter', dragEnter);
-    clownContainer.addEventListener('dragleave', dragLeave);
-    clownContainer.addEventListener('drop', drop);
 }
 
 main();
