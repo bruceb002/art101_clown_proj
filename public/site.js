@@ -11,7 +11,6 @@ function toggle_sites() {
 function main() {
     //go from title to dress up screen
     $("#dress_up_page").css("display", "none");
-    console.log($(".accessory"));
     $("#start").click(toggle_sites);
 }
 

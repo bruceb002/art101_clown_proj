@@ -2,6 +2,7 @@ import React from 'react';
 import AccessoriesGrid from './AccessoriesGrid';
 import ClownContainer from './ClownContainer';
 
+
 function App() {
   return (
     <main>
@@ -13,10 +14,12 @@ function App() {
           <ClownContainer />
         </div>
 
+        
         <div id="accessories">
           <h2>Accessories</h2>
           <AccessoriesGrid />
         </div>
+        
       </div>
     </main>
   );
