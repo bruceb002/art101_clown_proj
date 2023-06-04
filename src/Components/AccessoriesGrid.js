@@ -8,13 +8,10 @@ function AccessoriesGrid() {
     { id: 'hair_yellow', src: './assets/head/hair_yellow.png', alt: 'Yellow Hair', className: 'hair' },
   ];
 
-  /*
-  const shirtAccessories = [
-    { id: 'blue_shirt', src: './assets/clothes/shirt_blue.png', alt: 'Blue Shirt', className: 'accessory' },
-    { id: 'green_shirt', src: './assets/clothes/shirt_green.png', alt: 'Green Shirt', className: 'accessory' },
-    { id: 'red_shirt', src: './assets/clothes/shirt_red.png', alt: 'Red Shirt', className: 'accessory' },
+  const eyeAccessories = [
+    { id: 'eyes_pb', src: './assets/head/eyes_pb.png', alt: 'Pink Blue Eyes', className: 'eye' },
+    { id: 'eyes_red', src: './assets/head/eyes_red.png', alt: 'Red Eyes', className: 'eye' },
   ];
-  */
 
   return (
     <nav>
@@ -25,14 +22,12 @@ function AccessoriesGrid() {
         ))}
       </div>
       
-      {/*
       <h3>Shirts</h3>
-      <div className="clown-shirts" id="shirt-accessories">
-        {shirtAccessories.map(accessory => (
+      <div className="clown-eyes" id="eye-accessories">
+        {eyeAccessories.map(accessory => (
           <Accessory key={accessory.id} {...accessory} />
         ))}
       </div>
-        */}
     </nav>
   );
 }
@@ -43,6 +38,7 @@ function Accessory({ id, src, alt, className }) {
     item: {
       id,
       className,
+      alt
     },
     collect: monitor => ({
       isDragging: monitor.isDragging(),
@@ -56,7 +52,6 @@ function Accessory({ id, src, alt, className }) {
       src={src}
       alt={alt}
       ref={drag}
-      style={{ background: isDragging ? 'transparent' : '' }}
     />
   );
 }

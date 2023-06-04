@@ -8,7 +8,6 @@ function ClownContainer() {
     accept: 'accessory',
     drop: (item) => {
       moveAccessory(item);
-      setDroppedAccessories((prevAccessories) => [...prevAccessories, item]);
     },
     collect: monitor => ({
       isOver: monitor.isOver(),
@@ -16,30 +15,26 @@ function ClownContainer() {
   }));
 
   const moveAccessory = (item) => {
-    const { className, id } = item;
-    const existingAccessoryIndex = droppedAccessories.findIndex(
-      (accessory) => accessory.className === className
-    );
-  
-    if (existingAccessoryIndex !== -1) {
-      setDroppedAccessories((prevAccessories) =>
-        prevAccessories.map((accessory, index) =>
-          index === existingAccessoryIndex ? item : accessory
-        )
-      );
-    } else {
-      setDroppedAccessories((prevAccessories) => [...prevAccessories, item]);
-    }
+    setDroppedAccessories((prevAccessories) => {
+      const existingIndex = prevAccessories.findIndex((accessory) => accessory.className === item.className);
+      if (existingIndex !== -1) {
+        const updatedAccessories = [...prevAccessories];
+        updatedAccessories.splice(existingIndex, 1, item);
+        return updatedAccessories;
+      } else {
+        return [...prevAccessories, item];
+      }
+    });
   };
 
   const renderAccessories = () => {
-    return droppedAccessories.map((accessory) => (
+    return droppedAccessories.map((item) => (
       <img
-        key={accessory.id}
-        id={accessory.id}
-        src={`./assets/head/${accessory.id}.png`}
-        alt={accessory.alt}
-        className="hair"
+        key={item.id}
+        id={item.id}
+        src={`./assets/head/${item.id}.png`}
+        alt={item.alt}
+        className={item.className}
         style={{
           position: 'relative',
           bottom: '560px',
