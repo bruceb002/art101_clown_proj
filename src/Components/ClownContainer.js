@@ -28,22 +28,30 @@ function ClownContainer() {
   };
 
   const renderAccessories = () => {
-    return droppedAccessories.map((item) => (
-      <img
-        key={item.id}
-        id={item.id}
-        src={`./assets/head/${item.id}.png`}
-        alt={item.alt}
-        className={item.className}
-        style={{
-          position: 'relative',
-          bottom: '560px',
-          maxWidth: '120px',
-          maxHeight: '96px',
-        }}
-      />
-    ));
-  }
+    return droppedAccessories.map((item) => {
+      let bottomValue = '0px'; // Default bottom value
+  
+      if (item.className === 'hair') {
+        bottomValue = '560px'; 
+      } else if (item.className === 'eye') {
+        bottomValue = '500px';
+      }
+  
+      return (
+        <img
+          key={item.id}
+          id={item.id}
+          src={`./assets/${item.type}/${item.id}.png`}
+          alt={item.alt}
+          className={item.className}
+          style={{
+            position: 'relative',
+            bottom: bottomValue
+          }}
+        />
+      );
+    });
+  };
 
   return (
     <div id="doll-container" ref={drop}>
