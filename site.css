@@ -102,14 +102,20 @@ h3 {
 }
 
 #hair-accessories .hair, #eye-accessories .eye {
-  max-width: 120px;
-  max-height: 96px;
   padding-left: 30px;
   padding-right: 30px;
   margin-bottom: 15px;
 }
 
-#eye-accessories
+.hair {
+  max-width: 120px;
+  max-height: 96px;
+}
+
+.eye {
+  max-width: 40px;
+  max-height: 80px;
+}
 
 nav img {
   position: relative;
