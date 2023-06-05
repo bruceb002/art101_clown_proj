@@ -40,7 +40,9 @@ button {
   background-color: #c90000;
   border-radius: 50%;
   aspect-ratio: 1/1;
-  height: 55%;
+  height: 40%;
+  margin-left: 50px;
+  margin-bottom: 40px;
 }
 
 /* CSS For Dress Up Page */
