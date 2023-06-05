@@ -10,6 +10,8 @@ function toggle_sites() {
     var dressUpPage = $("#dress_up_page");
     titlePage.css("display", "none");
     dressUpPage.css("display", "block");
+
+    //play audio
     audio_control();
 }
 
