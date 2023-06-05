@@ -95,14 +95,14 @@ h3 {
   border: inset 8px #e50000;
 }
 
-#hair-accessories, #eye-accessories {
+#hair-accessories, #eye-accessories, #nose-accessories, #mouth-accessories {
   display: grid;
   grid-template-columns: auto auto;
   width: 100%;
   margin: auto;
 }
 
-#hair-accessories .hair, #eye-accessories .eye {
+#hair-accessories .hair, #eye-accessories .eye, #nose-accessories .nose, #mouth-accessories .mouth {
   margin: auto;
   margin-bottom: 25px;
 }
@@ -113,6 +113,16 @@ h3 {
 }
 
 .eye {
+  max-width: 40px;
+  max-height: 80px;
+}
+
+.nose {
+  max-width: 40px;
+  max-height: 80px;
+}
+
+.mouth {
   max-width: 40px;
   max-height: 80px;
 }
