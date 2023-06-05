@@ -1,7 +1,7 @@
 function audio_control() {
     var aud = document.getElementById("game-audio");
     aud.volume = 0.5;
-    aud.play();
+    var promise = aud.play();
     if (promise !== undefined) {
         promise.then(_ => {
           console.log("Autoplay started!");
