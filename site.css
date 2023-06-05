@@ -95,14 +95,18 @@ h3 {
   border: inset 8px #e50000;
 }
 
-#hair-accessories, #eye-accessories, #nose-accessories, #mouth-accessories {
+#hair-accessories, #eye-accessories, 
+#nose-accessories, #mouth-accessories,
+#shirt-accessories {
   display: grid;
   grid-template-columns: auto auto;
   width: 100%;
   margin: auto;
 }
 
-#hair-accessories .hair, #eye-accessories .eye, #nose-accessories .nose, #mouth-accessories .mouth {
+#hair-accessories .hair, #eye-accessories .eye, 
+#nose-accessories .nose, #mouth-accessories .mouth,
+#shirt-accessories .shirt {
   margin: auto;
   margin-bottom: 25px;
 }
@@ -125,6 +129,11 @@ h3 {
 .mouth {
   max-width: 35px;
   max-height: 75px;
+}
+
+.shirt {
+  max-width: 220px;
+  max-height: 188px;
 }
 
 nav img {
