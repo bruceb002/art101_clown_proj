@@ -148,6 +148,11 @@ h3 {
   max-height: 240px;
 }
 
+#pant-accessories .pant {
+  max-width: 120px;
+  max-height: 120px;
+}
+
 nav img {
   position: relative;
   cursor: grab;
