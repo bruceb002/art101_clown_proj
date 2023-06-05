@@ -131,10 +131,19 @@ h3 {
   max-height: 75px;
 }
 
-.shirt {
-  max-width: 220px;
-  max-height: 188px;
+
+/* Shirt is too big, so I have to handle the sizes differently */
+#doll-container .shirt {
+  max-width: 250px;
+  max-height: 180px;
 }
+
+#shirt-accessories .shirt {
+  max-width: 120px;
+  max-height: 120px;
+}
+
+
 
 nav img {
   position: relative;
