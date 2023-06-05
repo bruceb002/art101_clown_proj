@@ -2,10 +2,6 @@
 html {
   width: 100%;
   height: 100%;
-  background-image: url("./img/background.jpg");
-  background-size:cover;
-  background-position: center;
-  background-repeat: no-repeat;
 }
 
 body {
@@ -21,14 +17,22 @@ main {
 }
 
 /* CSS For Title Page */
+#title_page main {
+  background-image: url("./img/title_clown.jpg");
+  background-size:contain;
+  position: absolute;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* CSS For Title Page */
 #title_page {
   height: 100%;
   width: 100%;
-  background-size: contain;
+  background-size: cover;
   background-position: center;
-  position: absolute;
   background-repeat: no-repeat;
-  background-image: url("./img/title_clown.jpg");
+  background-image: url("./img/background.jpg");
 }
   
 #title_page main {
