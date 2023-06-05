@@ -143,9 +143,15 @@ h3 {
   max-height: 120px;
 }
 
-#doll-container .pant {
+#doll-container #red_polka_dot_pants, #doll-container #striped_pants, 
+#doll-container #yp_poka_dot_pants {
   max-width: 260px;
   max-height: 240px;
+}
+
+#doll-container #skirt {
+  max-width: 170px;
+  max-height: 170px;
 }
 
 #pant-accessories .pant {
