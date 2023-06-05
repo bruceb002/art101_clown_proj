@@ -148,18 +148,6 @@ h3 {
   max-height: 240px;
 }
 
-#pant-accessories#red_polka_dot_pants, #pant-accessories#striped_pants, #pant-accessories#yp_poka_dot_pants {
-  max-width: 120px;
-  max-height: 120px;
-}
-
-#skirt {
-  max-width: 550px;
-  max-height: 550px;
-}
-
-
-
 nav img {
   position: relative;
   cursor: grab;
