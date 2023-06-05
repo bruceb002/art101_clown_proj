@@ -21,12 +21,11 @@ main {
 #title_page {
   height: 100%;
   width: 100%;
-  background-size: cover;
+  background-size: contain;
+  background-position: center;
   position: absolute;
   background-repeat: no-repeat;
-  background-image: url("./img/title_clown.jpg");
-  
-  
+  background-image: url("./img/title_clown.jpg"),  url("./img/background.jpg");
 }
   
 #title_page main {
