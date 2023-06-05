@@ -1,7 +1,7 @@
 function audio_control() {
-    var audio = document.getElementById("game-audio");
-    audio.volume = 0.5;
-    audio.play();
+    var aud = document.getElementById("game-audio");
+    aud.volume = 0.5;
+    aud.play();
 }
 
 function toggle_sites() {
