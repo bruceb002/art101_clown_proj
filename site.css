@@ -18,6 +18,10 @@ main {
 
 /* CSS For Title Page */
 #title_page main {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
   background-image: url("./img/title_clown.jpg");
   background-size:contain;
   position: absolute;
@@ -33,13 +37,6 @@ main {
   background-position: center;
   background-repeat: no-repeat;
   background-image: url("./img/background.jpg");
-}
-  
-#title_page main {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-  align-items: center;
 }
 
 button {
