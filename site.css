@@ -97,7 +97,7 @@ h3 {
 
 #hair-accessories, #eye-accessories, 
 #nose-accessories, #mouth-accessories,
-#shirt-accessories {
+#shirt-accessories, #pant-accessories {
   display: grid;
   grid-template-columns: auto auto;
   width: 100%;
@@ -106,7 +106,7 @@ h3 {
 
 #hair-accessories .hair, #eye-accessories .eye, 
 #nose-accessories .nose, #mouth-accessories .mouth,
-#shirt-accessories .shirt {
+#shirt-accessories .shirt, #pant-accessories .pant {
   margin: auto;
   margin-bottom: 25px;
 }
@@ -132,13 +132,23 @@ h3 {
 }
 
 
-/* Shirt is too big, so I have to handle the sizes differently */
+/* Big Sizes, so I have to handle the sizes differently */
 #doll-container .shirt {
   max-width: 250px;
   max-height: 180px;
 }
 
 #shirt-accessories .shirt {
+  max-width: 120px;
+  max-height: 120px;
+}
+
+#doll-container .pant {
+  max-width: 250px;
+  max-height: 180px;
+}
+
+#pant-accessories .pant {
   max-width: 120px;
   max-height: 120px;
 }
