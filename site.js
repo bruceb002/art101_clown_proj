@@ -1,14 +1,7 @@
 function audio_control() {
     var aud = document.getElementById("game-audio");
     aud.volume = 0.5;
-    var promise = aud.play();
-    if (promise !== undefined) {
-        promise.then(_ => {
-          console.log("Autoplay started!");
-        }).catch(error => {
-            console.log("Autoplay was prevented. Show a 'Play' button so that user can start playback.")
-        });
-      }
+    aud.play();
 }
 
 function toggle_sites() {
