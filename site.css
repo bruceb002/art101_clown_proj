@@ -161,9 +161,14 @@ h3 {
   max-height: 120px;
 }
 
-.shoes {
+#shoe-accessories .shoes {
   max-width: 120px;
   max-height: 45px;
+}
+
+#doll-container .shoes {
+  max-width: 235px;
+  max-height: 105px;
 }
 
 nav img {
