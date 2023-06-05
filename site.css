@@ -118,13 +118,13 @@ h3 {
 }
 
 .nose {
-  max-width: 40px;
-  max-height: 80px;
+  max-width: 15px;
+  max-height: 15px;
 }
 
 .mouth {
-  max-width: 40px;
-  max-height: 80px;
+  max-width: 35px;
+  max-height: 75px;
 }
 
 nav img {
