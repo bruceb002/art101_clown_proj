@@ -97,7 +97,8 @@ h3 {
 
 #hair-accessories, #eye-accessories, 
 #nose-accessories, #mouth-accessories,
-#shirt-accessories, #pant-accessories {
+#shirt-accessories, #pant-accessories,
+#shoe-accessories {
   display: grid;
   grid-template-columns: auto auto;
   width: 100%;
@@ -106,7 +107,8 @@ h3 {
 
 #hair-accessories .hair, #eye-accessories .eye, 
 #nose-accessories .nose, #mouth-accessories .mouth,
-#shirt-accessories .shirt, #pant-accessories .pant {
+#shirt-accessories .shirt, #pant-accessories .pant,
+#shoe-accessories .shoes {
   margin: auto;
   margin-bottom: 25px;
 }
@@ -157,6 +159,11 @@ h3 {
 #pant-accessories .pant {
   max-width: 120px;
   max-height: 120px;
+}
+
+.shoes {
+  max-width: 120px;
+  max-height: 45px;
 }
 
 nav img {
