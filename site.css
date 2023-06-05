@@ -2,7 +2,10 @@
 html {
   width: 100%;
   height: 100%;
-  background-color: #ffeed6;
+  background-image: url("./img/background.jpg");
+  background-size:cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 body {
@@ -25,7 +28,7 @@ main {
   background-position: center;
   position: absolute;
   background-repeat: no-repeat;
-  background-image: url("./img/title_clown.jpg"),  url("./img/background.jpg");
+  background-image: url("./img/title_clown.jpg");
 }
   
 #title_page main {
