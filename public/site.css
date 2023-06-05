@@ -95,14 +95,20 @@ h3 {
   border: inset 8px #e50000;
 }
 
-#hair-accessories, #eye-accessories {
+#hair-accessories, #eye-accessories, 
+#nose-accessories, #mouth-accessories,
+#shirt-accessories, #pant-accessories,
+#shoe-accessories {
   display: grid;
   grid-template-columns: auto auto;
   width: 100%;
   margin: auto;
 }
 
-#hair-accessories .hair, #eye-accessories .eye {
+#hair-accessories .hair, #eye-accessories .eye, 
+#nose-accessories .nose, #mouth-accessories .mouth,
+#shirt-accessories .shirt, #pant-accessories .pant,
+#shoe-accessories .shoes {
   margin: auto;
   margin-bottom: 25px;
 }
@@ -117,14 +123,63 @@ h3 {
   max-height: 80px;
 }
 
+.nose {
+  max-width: 15px;
+  max-height: 15px;
+}
+
+.mouth {
+  max-width: 35px;
+  max-height: 75px;
+}
+
+
+/* Big Sizes, so I have to handle the sizes differently */
+#doll-container .shirt {
+  max-width: 250px;
+  max-height: 180px;
+}
+
+#shirt-accessories .shirt {
+  max-width: 120px;
+  max-height: 120px;
+}
+
+#doll-container #red_polka_dot_pants, #doll-container #striped_pants, 
+#doll-container #yp_poka_dot_pants {
+  max-width: 260px;
+  max-height: 240px;
+}
+
+#doll-container #skirt {
+  max-width: 170px;
+  max-height: 170px;
+}
+
+#pant-accessories .pant {
+  max-width: 120px;
+  max-height: 120px;
+}
+
+#shoe-accessories .shoes {
+  max-width: 120px;
+  max-height: 45px;
+}
+
+#doll-container .shoes {
+  max-width: 235px;
+  max-height: 105px;
+}
+
 nav img {
   position: relative;
   cursor: grab;
 }
       
 #clownZone {
+  margin: auto;
   position: relative;
-  z-index: 0;
+  z-index: 1;
   border: inset 8px #c90000;
   padding-top: 50px;
   padding-bottom: 50px;
@@ -138,7 +193,7 @@ nav img {
 
 #doll-base {
   position: relative;
-  z-index: 0;
+  z-index: 1;
   display: block;
   margin: auto;
   max-width: 42%;

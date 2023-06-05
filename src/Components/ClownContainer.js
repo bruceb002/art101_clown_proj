@@ -29,12 +29,54 @@ function ClownContainer() {
 
   const renderAccessories = () => {
     return droppedAccessories.map((item) => {
-      let bottomValue = '0px'; // Default bottom value
-  
-      if (item.className === 'hair') {
-        bottomValue = '560px'; 
-      } else if (item.className === 'eye') {
+
+      //initialize to otherwise default values
+      let bottomValue = '0px';
+      let l = '0px';
+      let z = '1';
+      let cN = item.className;
+
+      if (cN === 'hair') {
+        bottomValue = '520px'; 
+        z = '100';
+        l = '365px';
+      } else if (cN === 'eye') {
+        bottomValue = '535px';
+        z = '99';
+        l = '405px';
+      } else if (cN == 'nose') {
+        bottomValue = '525px';
+        z = '90';
+        l = '417px';
+      } else if(cN == 'mouth') {
         bottomValue = '500px';
+        z = '90';
+        l = '407px';
+      } else if(cN == 'shirt') {
+          z = '90';
+          l = '300px';
+          if(item.id == 'fiery-poka-dot-shirt') {
+            bottomValue = '340px';
+          } else {
+            bottomValue = '327px';
+          }
+      } else if(cN == 'pant') {
+        z = '90';
+
+        if(item.id == 'skirt') {
+          bottomValue = '260px';
+          l = '340px';
+        } else if(item.id == 'striped_pants') {
+          bottomValue = '125px';
+          l = '320px';
+        } else {
+          bottomValue = '133px';
+          l = '347px';
+        }
+      } else if(cN == 'shoes') {
+        z = '90';
+        bottomValue = '50px';
+        l = '308px';
       }
   
       return (
@@ -45,8 +87,10 @@ function ClownContainer() {
           alt={item.alt}
           className={item.className}
           style={{
-            position: 'relative',
-            bottom: bottomValue
+            position: 'absolute',
+            zIndex: z,
+            bottom: bottomValue,
+            left: l
           }}
         />
       );
