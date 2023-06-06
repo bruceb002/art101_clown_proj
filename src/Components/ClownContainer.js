@@ -52,7 +52,7 @@ function ClownContainer() {
           if(item.id === 'fiery-poka-dot-shirt') {
             topValue = '16.3%';
           } else {
-            topValue = '18.5%';
+            topValue = '18%';
           }
       } else if(cN === 'gloves') {
         z = '90';
@@ -63,7 +63,7 @@ function ClownContainer() {
         if(item.id === 'skirt') {
           topValue = '44%';
         } else if(item.id === 'striped_pants') {
-          topValue = '42%';
+          topValue = '41.5%';
         } else {
           topValue = '38%';
         }
@@ -73,13 +73,13 @@ function ClownContainer() {
       } else { //others section
         if(cN === 'makeup') {
           z = '80';
-          topValue = '-1%';
+          topValue = '-0.5%';
         } else if(cN === 'hat') {
           z = '101';
           topValue = '-18%';
         } else if(cN === 'neck') {
           z = '100';
-          topValue = '10%';
+          topValue = '18%';
         }
       }
   
