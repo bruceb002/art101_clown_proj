@@ -47,7 +47,7 @@ main {
   aspect-ratio: 1/1;
   height: 15%;
   text-align: center;
-  font-size: 25px;
+  font-size: 20px;
   font-family: Copperplate, Papyrus, fantasy;
 }
 
@@ -206,6 +206,12 @@ h3 {
 nav img {
   position: relative;
   cursor: grab;
+}
+
+#doll-container {
+  position: relative; 
+  display: flex; 
+  justify-content: center;
 }
       
 #clownZone {
