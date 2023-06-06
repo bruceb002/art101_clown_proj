@@ -4,11 +4,14 @@ import { useDrop } from 'react-dnd';
 function ClownContainer() {
   const [droppedAccessories, setDroppedAccessories] = useState([]);
 
-  const drop = useDrop(() => ({
+  const [{ isOver }, drop] = useDrop(() => ({
     accept: 'accessory',
     drop: (item) => {
       moveAccessory(item);
-    },
+    }, 
+    collect: monitor => ({
+      isOver: monitor.isOver(),
+    }),
   }));
 
   const moveAccessory = (item) => {
@@ -27,70 +30,56 @@ function ClownContainer() {
   const renderAccessories = () => {
     return droppedAccessories.map((item) => {
 
-      //initialize to otherwise default values
-      let bottomValue = '0px';
-      let l = '0px';
+      //initialize to otherwise default values: top: -6%;
+      let topValue = '0px';
       let z = '1';
       let cN = item.className;
 
       if (cN === 'hair') {
-        bottomValue = '485px'; 
+        topValue = '-6%'; 
         z = '100';
-        l = '365px';
       } else if (cN === 'eye') {
-        bottomValue = '500px';
+        topValue = '3%';
         z = '99';
-        l = '405px';
       } else if (cN === 'nose') {
-        bottomValue = '490px';
+        topValue = '8%';
         z = '90';
-        l = '417px';
       } else if(cN === 'mouth') {
-        bottomValue = '465px';
+        topValue = '12%';
         z = '90';
-        l = '407px';
       } else if(cN === 'shirt') {
           z = '90';
-          l = '300px';
           if(item.id === 'fiery-poka-dot-shirt') {
-            bottomValue = '305px';
+            topValue = '16%';
           } else {
-            bottomValue = '292px';
+            topValue = '18%';
           }
       } else if(cN === 'gloves') {
         z = '90';
-        l = '244px';
-        bottomValue = '245px';
+        topValue = '47%';
       } else if(cN === 'pant') {
         z = '90';
 
         if(item.id === 'skirt') {
-          bottomValue = '225px';
-          l = '340px';
+          topValue = '44%';
         } else if(item.id === 'striped_pants') {
-          bottomValue = '90px';
-          l = '320px';
+          topValue = '42%';
         } else {
-          bottomValue = '98px';
-          l = '347px';
+          topValue = '38%';
         }
       } else if(cN === 'shoes') {
         z = '90';
-        bottomValue = '15px';
-        l = '308px';
+        topValue = '85%';
       } else { //others section
         if(cN === 'makeup') {
           z = '80';
-          l = '380px';
-          bottomValue = '450px';
+          topValue = '-1%';
         } else if(cN === 'hat') {
           z = '101';
-          l = '380px';
-          bottomValue = '535px';
+          topValue = '-18%';
         } else if(cN === 'neck') {
           z = '100';
-          l = '350px';
-          bottomValue = '400px';
+          topValue = '8%';
         }
       }
   
@@ -104,8 +93,7 @@ function ClownContainer() {
           style={{
             position: 'absolute',
             zIndex: z,
-            bottom: bottomValue,
-            left: l
+            top: topValue
           }}
         />
       );

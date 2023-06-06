@@ -22,7 +22,7 @@ main {
   flex-direction: column;
   justify-content: flex-end;
   align-items: center;
-  background-image: url("./img/title_clown.jpg");
+  background-image: url("./img/title_clown.JPG");
   background-size:contain;
   position: absolute;
   background-position: center;
@@ -41,12 +41,13 @@ main {
 
 #title_page button {
   background-color: #c90000;
+  margin: auto;
+  text-align: center;
   border-radius: 50%;
   aspect-ratio: 1/1;
-  height: 25%;
-  margin-left: 40px;
-  margin-bottom: 272px;
-  font-size: 35px;
+  height: 15%;
+  text-align: center;
+  font-size: 20px;
   font-family: Copperplate, Papyrus, fantasy;
 }
 
@@ -205,6 +206,12 @@ h3 {
 nav img {
   position: relative;
   cursor: grab;
+}
+
+#doll-container {
+  position: relative; 
+  display: flex; 
+  justify-content: center;
 }
       
 #clownZone {
