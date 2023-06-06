@@ -29,8 +29,12 @@ function AccessoriesGrid() {
     { id: 'shirt_yp', src: './assets/torso/shirt_yp.png', alt: 'yellow pink shirt', className: 'shirt', type: 'torso' },
     { id: 'shirt_rb', src: './assets/torso/shirt_rb.png', alt: 'red black shirt', className: 'shirt', type: 'torso' },
     { id: 'fiery-poka-dot-shirt', src: './assets/torso/fiery-poka-dot-shirt.png', alt: 'fiery pink red shirt', className: 'shirt', type: 'torso' }
-    
   ];
+
+  var handAccessories = [
+    { id: 'gloves', src: './assets/hands/gloves.png', alt: 'normal gloves', className: 'gloves', type: 'hands' },
+    { id: 'gloves_bloody', src: './assets/hands/gloves_bloody.png', alt: 'bloody gloves', className: 'gloves', type: 'hands' }
+  ]
 
   var legAccessories = [
     { id: 'yp_poka_dot_pants', src: './assets/legs/yp_poka_dot_pants.png', alt: 'Yellow Pink pants', className: 'pant', type: 'legs' },
@@ -42,6 +46,12 @@ function AccessoriesGrid() {
   var feetAccessories = [
     { id: 'shoes_pb', src: './assets/feet/shoes_pb.png', alt: 'Pink Blue Shoes', className: 'shoes', type: 'feet' },
     { id: 'shoes_rb', src: './assets/feet/shoes_rb.png', alt: 'Red Black Shoes', className: 'shoes', type: 'feet' }
+  ];
+
+  var otherAccessories = [
+    { id: 'face_makeup', src: './assets/head/face_makeup.png', alt: 'face makeup', className: 'makeup', type: 'head' },
+    { id: 'party_hat', src: './assets/head/party_hat.png', alt: 'party hat', className: 'hat', type: 'head' },
+    { id: 'clown_collar', src: './assets/torso/clown_collar.png', alt: 'collar', className: 'neck', type: 'torso' }
   ];
 
   return (
@@ -81,6 +91,13 @@ function AccessoriesGrid() {
         ))}
       </div>
 
+      <h3>Hands</h3>
+      <div className="clown-gloves" id="hand-accessories">
+        {handAccessories.map(accessory => (
+          <Accessory key={accessory.id} {...accessory} />
+        ))}
+      </div>
+
       <h3>Pants</h3>
       <div className="clown-pants" id="pant-accessories">
         {legAccessories.map(accessory => (
@@ -91,6 +108,13 @@ function AccessoriesGrid() {
       <h3>Shoes</h3>
       <div className="clown-shoes" id="shoe-accessories">
         {feetAccessories.map(accessory => (
+          <Accessory key={accessory.id} {...accessory} />
+        ))}
+      </div>
+
+      <h3>Others</h3>
+      <div className="clown-others" id="other-accessories">
+        {otherAccessories.map(accessory => (
           <Accessory key={accessory.id} {...accessory} />
         ))}
       </div>
