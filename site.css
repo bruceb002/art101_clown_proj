@@ -62,7 +62,7 @@ main {
   width: 95%;
   background: #f9ffc7;
   border: 20px solid transparent;
-  border-image: url('./img/texture.jpg') 20 round;
+  border-image: url('./img/texture.jpg') round;
   margin-bottom: 15px;
   
 }
@@ -101,8 +101,8 @@ h3 {
   padding-bottom: 15px;
   background: transparent;
   overflow-y: scroll;
-  border: 10px solid transparent;
-  border-image: url('./img/texture.jpg') 10 round;
+  border: 8px solid transparent;
+  border-image: url('./img/texture.jpg') round;
 }
 
 #hair-accessories, #eye-accessories, 
@@ -255,8 +255,8 @@ nav img {
   margin: auto;
   position: relative;
   z-index: 1;
-  border: 10px solid transparent;
-  border-image: url('./img/texture.jpg') 10 round;
+  border: 8px solid transparent;
+  border-image: url('./img/texture.jpg') round;
   padding-top: 110px;
   padding-bottom: 15px;
   background-image: url("./img/placeholder_img.jpg");
