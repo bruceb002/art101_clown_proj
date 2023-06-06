@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.js": "/art101_clown_proj/static/js/main.a53b06b2.js",
+    "main.js": "/art101_clown_proj/static/js/main.40282fda.js",
     "index.html": "/art101_clown_proj/index.html",
-    "main.a53b06b2.js.map": "/art101_clown_proj/static/js/main.a53b06b2.js.map"
+    "main.40282fda.js.map": "/art101_clown_proj/static/js/main.40282fda.js.map"
   },
   "entrypoints": [
-    "static/js/main.a53b06b2.js"
+    "static/js/main.40282fda.js"
   ]
 }
