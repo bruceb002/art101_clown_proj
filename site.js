@@ -10,7 +10,7 @@ function toggle_sites() {
     var dressUpPage = $("#dress_up_page");
     titlePage.css("display", "none");
     dressUpPage.css("display", "block");
-    $("html").css('background-color', '#fff0dd');
+    $("html").css("background-image", "url('./img/dress-up-background.jpeg')");
     
     //play audio
     audio_control();
