@@ -39,7 +39,7 @@ main {
   background-image: url("./img/background.jpg");
 }
 
-button {
+#title_page button {
   background-color: #c90000;
   border-radius: 50%;
   aspect-ratio: 1/1;
@@ -55,6 +55,17 @@ button {
   width: inherit;
   height: inherit;
   padding: 15px;
+}
+
+#dress_up_page button {
+    background-color: #c90000;
+    border-radius: 50%;
+    aspect-ratio: 1/1;
+    height: 8%;
+    font-size: 13px;
+    font-family: Copperplate, Papyrus, fantasy;
+    position: relative;
+    z-index: 200;
 }
 
 #header {
