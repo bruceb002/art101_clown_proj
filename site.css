@@ -192,7 +192,7 @@ h3 {
 
 #doll-container #striped_pants 
  {
-  max-width: 24%;
+  max-width: 24.5%;
 }
 
 #doll-container #skirt {
@@ -217,11 +217,11 @@ h3 {
 /* Other accessories */
 
 #doll-container .makeup {
-  max-width: 10.5%;
+  max-width: 9.5%;
 }
 
 #doll-container .neck {
-  max-width: 15%;
+  max-width: 4.5%;
 }
 
 #doll-container .hat {
