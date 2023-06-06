@@ -2,6 +2,13 @@ function audio_control() {
     var aud = document.getElementById("game-audio");
     aud.volume = 0.5;
     aud.play();
+    if (promise !== undefined) {
+        promise.then(_ => {
+          console.log("Autoplay started!");
+        }).catch(error => {
+            console.log("Autoplay was prevented. Show a 'Play' button so that user can start playback.")
+        });
+      }
 }
 
 function toggle_sites() {
@@ -10,9 +17,12 @@ function toggle_sites() {
     var dressUpPage = $("#dress_up_page");
     titlePage.css("display", "none");
     dressUpPage.css("display", "block");
+<<<<<<< HEAD
     $("html").css('background-color', '#fff0dd');
     
     //play audio
+=======
+>>>>>>> parent of 7e41d85... added tab icon
     audio_control();
 }
 
