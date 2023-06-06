@@ -213,7 +213,7 @@ nav img {
   z-index: 1;
   border: inset 8px #c90000;
   padding-top: 80px;
-  padding-bottom: 80px;
+  padding-bottom: 20px;
   background-image: url("./img/placeholder_img.jpg");
   background-position: center;
   background-repeat: no-repeat;
