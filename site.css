@@ -61,7 +61,8 @@ main {
 #header {
   width: 95%;
   background: #f9ffc7;
-  border: inset 20px #ff4646;
+  border: 20px solid transparent;
+  border-image: url('./img/circus-texture.png');
   margin-bottom: 15px;
   
 }
@@ -100,7 +101,8 @@ h3 {
   padding-bottom: 15px;
   background: transparent;
   overflow-y: scroll;
-  border: inset 8px #e50000;
+  border: 10px solid transparent;
+  border-image: url('./img/circus-texture.png');
 }
 
 #hair-accessories, #eye-accessories, 
@@ -253,7 +255,8 @@ nav img {
   margin: auto;
   position: relative;
   z-index: 1;
-  border: inset 8px #c90000;
+  border: 10px solid transparent;
+  border-image: url('./img/circus-texture.png');
   padding-top: 110px;
   padding-bottom: 15px;
   background-image: url("./img/placeholder_img.jpg");
