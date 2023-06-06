@@ -115,7 +115,7 @@ h3 {
 
 #hair-accessories .hair, #eye-accessories .eye, 
 #nose-accessories .nose, #mouth-accessories .mouth,
-#shirt-accessories .shirt, #hand-accessories .gloves
+#shirt-accessories .shirt, #hand-accessories .gloves,
 #pant-accessories .pant, #shoe-accessories .shoes,
 #other-accessories .makeup, #other-accessories .hat,
 #other-accessories .neck {
@@ -212,8 +212,8 @@ nav img {
   position: relative;
   z-index: 1;
   border: inset 8px #c90000;
-  padding-top: 50px;
-  padding-bottom: 50px;
+  padding-top: 80px;
+  padding-bottom: 80px;
   background-image: url("./img/placeholder_img.jpg");
   background-position: center;
   background-repeat: no-repeat;
