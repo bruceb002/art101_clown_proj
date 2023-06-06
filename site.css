@@ -146,7 +146,7 @@ h3 {
 
 /* nose */
 #doll-container .nose {
-  max-width: 3%;
+  max-width: 2.5%;
 }
 
 #accessories .nose {
@@ -156,7 +156,7 @@ h3 {
 
 /* mouth */
 #doll-container .mouth {
-  max-width: 5%;
+  max-width: 4.5%;
 }
 
 #accessories .mouth {
@@ -193,12 +193,11 @@ h3 {
 
 #doll-container #striped_pants 
  {
-  max-width: 23%;
+  max-width: 24%;
 }
 
-#doll-container #skirt { /* still needs change */
-  max-width: 170px;
-  max-height: 170px;
+#doll-container #skirt {
+  max-width: 18%;
 }
 
 #pant-accessories .pant {
@@ -227,7 +226,7 @@ h3 {
 }
 
 #doll-container .hat {
-  max-width: 15%;
+  max-width: 8%;
 }
 
 #other-accessories .makeup,  #other-accessories .neck, #other-accessories .hat {
