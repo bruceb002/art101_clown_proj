@@ -22,7 +22,7 @@ main {
   flex-direction: column;
   justify-content: flex-end;
   align-items: center;
-  background-image: url("./img/title_clown.jpg");
+  background-image: url("./img/title_clown.JPG");
   background-size:contain;
   position: absolute;
   background-position: center;
@@ -41,11 +41,12 @@ main {
 
 #title_page button {
   background-color: #c90000;
+  margin: auto;
+  text-align: center;
   border-radius: 50%;
   aspect-ratio: 1/1;
-  height: 25%;
-  margin-left: 40px;
-  margin-bottom: 272px;
+  height: 10%;
+  text-align: center;
   font-size: 35px;
   font-family: Copperplate, Papyrus, fantasy;
 }
