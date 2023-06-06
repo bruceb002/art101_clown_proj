@@ -59,12 +59,7 @@ main {
 
 #dress_up_page button {
   position: relative;
-  left: 180px;
-  margin-top: 50px;
   background-image: linear-gradient(red, yellow);
-  border-radius: 50%;
-  aspect-ratio: 1/1;
-  height: 8%;
   font-size: 10px;
   font-family: Copperplate, Papyrus, fantasy;
   z-index: 200;
