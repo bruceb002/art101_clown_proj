@@ -124,31 +124,50 @@ h3 {
   margin-bottom: 25px;
 }
 
-.hair {
+/* hair */
+#doll-container .hair {
+  max-width: 15%;
+}
+
+#accessories .hair {
   max-width: 120px;
   max-height: 96px;
 }
 
-.eye {
+/* eyes */
+#doll-container .eye {
+  max-width: 5%;
+}
+
+#accessories .eye {
   max-width: 40px;
   max-height: 80px;
 }
 
-.nose {
-  max-width: 15px;
-  max-height: 15px;
+/* nose */
+#doll-container .nose {
+  max-width: 3%;
 }
 
-.mouth {
+#accessories .nose {
+  max-width: 25px;
+  max-height: 25px;
+}
+
+/* mouth */
+#doll-container .mouth {
+  max-width: 5%;
+}
+
+#accessories .mouth {
   max-width: 35px;
   max-height: 75px;
 }
 
 
-/* Big Sizes, so I have to handle the sizes differently */
+/* shirt */
 #doll-container .shirt {
-  max-width: 250px;
-  max-height: 180px;
+  max-width: 30.5%;
 }
 
 #shirt-accessories .shirt {
@@ -156,9 +175,9 @@ h3 {
   max-height: 120px;
 }
 
+/* gloves */
 #doll-container .gloves {
-  max-width: 360px;
-  max-height: 210px;
+  max-width: 42%;
 }
 
 #hand-accessories .gloves {
@@ -166,13 +185,18 @@ h3 {
   max-height: 45px;
 }
 
-#doll-container #red_polka_dot_pants, #doll-container #striped_pants, 
+/* pants */
+#doll-container #red_polka_dot_pants,
 #doll-container #yp_poka_dot_pants {
-  max-width: 260px;
-  max-height: 240px;
+  max-width: 19%;
 }
 
-#doll-container #skirt {
+#doll-container #striped_pants 
+ {
+  max-width: 23%;
+}
+
+#doll-container #skirt { /* still needs change */
   max-width: 170px;
   max-height: 170px;
 }
@@ -182,25 +206,33 @@ h3 {
   max-height: 120px;
 }
 
+/* shoes */
+#doll-container .shoes {
+  max-width: 28%;
+}
+
 #shoe-accessories .shoes {
   max-width: 120px;
   max-height: 45px;
 }
 
-#doll-container .shoes {
-  max-width: 235px;
-  max-height: 105px;
+/* Other accessories */
+
+#doll-container .makeup {
+  max-width: 10.5%;
 }
 
-/* Other accessories have to be treated individually */
+#doll-container .neck {
+  max-width: 15%;
+}
+
+#doll-container .hat {
+  max-width: 15%;
+}
+
 #other-accessories .makeup,  #other-accessories .neck, #other-accessories .hat {
   max-width: 120px;
   max-height: 45px;
-}
-
-#doll-container .makeup, #doll-container .neck, #doll-container .hat {
-  max-width: 235px;
-  max-height: 105px;
 }
 
 nav img {

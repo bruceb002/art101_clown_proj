@@ -50,9 +50,9 @@ function ClownContainer() {
       } else if(cN === 'shirt') {
           z = '90';
           if(item.id === 'fiery-poka-dot-shirt') {
-            topValue = '16%';
+            topValue = '16.3%';
           } else {
-            topValue = '18%';
+            topValue = '18.5%';
           }
       } else if(cN === 'gloves') {
         z = '90';
@@ -79,7 +79,7 @@ function ClownContainer() {
           topValue = '-18%';
         } else if(cN === 'neck') {
           z = '100';
-          topValue = '8%';
+          topValue = '10%';
         }
       }
   
