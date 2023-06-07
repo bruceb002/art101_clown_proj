@@ -14,7 +14,6 @@ function toggle_sites() {
 
     $("html").css('background-position', 'center');
     $("html").css('background-size', 'cover');
-    $("html").css('background-repeat', 'no-repeat');
     $("html").css("background-image", "url('./img/dress-up-background.jpeg')");
     
     //play audio
