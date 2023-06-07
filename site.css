@@ -274,3 +274,7 @@ nav img {
   margin: auto;
   max-width: 42%;
 }
+
+#thought {
+  position: absolute;
+}
