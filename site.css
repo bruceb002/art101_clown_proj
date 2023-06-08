@@ -23,7 +23,7 @@ main {
   justify-content: flex-end;
   align-items: center;
   background-image: url("./img/title_clown.JPG");
-  background-size:contain;
+  background-size: contain;
   position: absolute;
   background-position: center;
   background-repeat: no-repeat;
@@ -272,12 +272,4 @@ nav img {
   display: block;
   margin: auto;
   max-width: 42%;
-}
-
-#thought {
-  position: absolute;
-  z-index: 300;
-  max-height: 17%;
-  top: -5%;
-  left: -5%;
 }
