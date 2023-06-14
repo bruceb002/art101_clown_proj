@@ -40,7 +40,7 @@ main {
 }
 
 #title_page button {
-  background-color: #c90000;
+  background-image: radial-gradient(red, darkred, black);
   margin: auto;
   border-radius: 50%;
   aspect-ratio: 1/1;
